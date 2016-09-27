@@ -5,7 +5,7 @@ Tim Teige (tim.teige91@gmail.com)
 Department of Computer Science, University of Tromsø
 
 _Date given: 20.09.2016_
-_Date due: 11.10.2016_
+_Date due: 10.10.2016_
 
 ## Introduction
 In this mandatory assignment you will implement a deduplication sender and receiver using Go. Deduplication is a global compression technique that is often used by backup systems. It achieves a very high compression ratio by identifying redundancy over the entire dataset instead of just a local window. Both sides maintain a big cache of previously sent data, and for redundant data a short fingerprint is sent instead of the data content. Deduplication systems need to support high throughput.
