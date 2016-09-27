@@ -33,12 +33,15 @@ If the receiver received a fingerprint and compressed chunk data it does the fol
 3. Write the chunk data to the output datastream
 
 ## Input data
-You will use the UniProt database, which is available here:
+You will use the UniProt database, which is available on the lgserv3. Use ssh or scp to connect to the server. You should also look at the Go packages for this. The address for the server is:
 
-http://ftp.ebi.ac.uk/pub/databases/swissprot/release/uniprot_sprot.dat.gz
-http://ftp.ebi.ac.uk/pub/databases/swissprot/release/uniprot_trembl.dat.gz
+lgserv3.stud.cs.uit.no
 
-Note that the sprot file is much smaller than the trembl dataset. Also note that these are compressed. We are currently working on storing these on a local server which you will have access to.
+The command for using ssh is:
+
+`ssh abc123@lgserv3.stud.cs.uit.no`
+
+Note that the sprot file is much smaller than the trembl dataset.
 
 You need to make a model for how you will access the data and how much time this will take. This model should take into account the dataset size, network bandwidth, and other students.
 
